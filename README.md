@@ -20,3 +20,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - **use()** hook to async load a resource such as a promise or context
 	- it could be used to replace **useEffect()** to fetch data
+	- data can be streamed from the server to the client by passing a Promise as a prop from a Server Component to a Client Component.
+
