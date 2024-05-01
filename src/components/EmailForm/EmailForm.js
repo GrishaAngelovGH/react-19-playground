@@ -53,7 +53,7 @@ const EmailForm = () => {
 				<button type="submit" className={commonStyles.submitButton}>Submit</button>
 			</form>
 
-			{isPending && <h1 className={styles.label}>Processing...</h1>}
+			{isPending && <h1 className={commonStyles.label}>Processing...</h1>}
 
 			{actionState.message.length > 0 && <h1 className={styles.label}>{actionState.message}</h1>}
 		</div>

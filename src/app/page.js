@@ -34,6 +34,12 @@ export default function Home() {
       title: "useActionState() hook",
       text: "It allows you to update state based on the result of a form action",
       path: "/email-form"
+    },
+    {
+      id: 6,
+      title: "useFormStatus() hook",
+      text: "It allows you to perform relevant operations while the form is pending i.e. disable submit button / show message",
+      path: "/product-list-status"
     }
   ]
 

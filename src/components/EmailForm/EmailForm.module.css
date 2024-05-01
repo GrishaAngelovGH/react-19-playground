@@ -16,10 +16,3 @@
 .incorrect {
   background: red;
 }
-
-.label {
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid #808080;
-  border-radius: 0.5rem;
-}
