@@ -40,6 +40,12 @@ export default function Home() {
       title: "useFormStatus() hook",
       text: "It allows you to perform relevant operations while the form is pending i.e. disable submit button / show message",
       path: "/product-list-status"
+    },
+    {
+      id: 7,
+      title: "useOptimistic() hook",
+      text: "It allows you to apply temporary updates to the UI while waiting for the server to respond",
+      path: "/chat"
     }
   ]
 
