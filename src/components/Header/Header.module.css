@@ -1,0 +1,9 @@
+.header {
+  padding: 1rem;
+  color: #808080;
+  text-align: center;
+  background: #e3e3e3;
+  border-radius: 1rem;
+  border: 1px solid #808080;
+  box-shadow: 0 0 10px #808080;
+}
