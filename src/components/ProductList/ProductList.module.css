@@ -1,0 +1,41 @@
+.productList {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formControl {
+  border: 1px solid #808080;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.submitButton {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background: dodgerblue;
+}
+
+.list {
+  list-style-type: none;
+  border: 1px solid #808080;
+  border-radius: 0.5rem;
+  background: #fff;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.listItem {
+  width: 20rem;
+  padding: 1rem;
+}
+
+.listItem:not(:last-child) {
+  border-bottom: 1px solid #808080;
+}

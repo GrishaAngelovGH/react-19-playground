@@ -22,6 +22,12 @@ export default function Home() {
       title: "use() hook to read a context",
       text: "It replaces useContext() to read a context",
       path: "/theme"
+    },
+    {
+      id: 4,
+      title: "using a form action to handle submitted data from a form",
+      text: "Read the values from formData passed to the action",
+      path: "/product-list"
     }
   ]
 

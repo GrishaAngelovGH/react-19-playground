@@ -23,3 +23,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 	- data can be streamed from the server to the client by passing a Promise as a prop from a Server Component to a Client Component.
 	- it could be used to replace **useContext()**
 
+- **form action** to handle submitted data from a form
