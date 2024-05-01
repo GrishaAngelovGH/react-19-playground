@@ -1,0 +1,39 @@
+.card {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBody {
+  width: 20rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #808080;
+}
+
+.bgLight {
+  background: lightgray;
+}
+
+.textDark {
+  color: #000;
+}
+
+.bgDark {
+  background: #808080;
+}
+
+.textLight {
+  color: #fff;
+}
+
+.button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background: dodgerblue;
+}

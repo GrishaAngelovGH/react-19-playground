@@ -16,6 +16,12 @@ export default function Home() {
       title: "use() hook to stream data from the server to the client",
       text: "Data can be streamed from the server to the client by passing a Promise as a prop from a Server Component to a Client Component",
       path: "/products"
+    },
+    {
+      id: 3,
+      title: "use() hook to read a context",
+      text: "It replaces useContext() to read a context",
+      path: "/theme"
     }
   ]
 
