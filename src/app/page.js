@@ -4,6 +4,15 @@ import Header from "components/Header"
 import styles from "./page.module.css"
 
 export default function Home() {
+  const cards = [
+    {
+      id: 1,
+      title: "use() hook to async load a resource",
+      text: "It replaces useEffect() to fetch data",
+      path: "/user"
+    }
+  ]
+
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -11,7 +20,11 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <Card title="Card Title" text="Card Text" path="/" />
+        {
+          cards.map(v => (
+            <Card key={v.id} {...v} />
+          ))
+        }
       </div>
     </main>
   )
