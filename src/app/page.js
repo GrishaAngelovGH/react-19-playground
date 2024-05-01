@@ -28,6 +28,12 @@ export default function Home() {
       title: "using a form action to handle submitted data from a form",
       text: "Read the values from formData passed to the action",
       path: "/product-list"
+    },
+    {
+      id: 5,
+      title: "useActionState() hook",
+      text: "It allows you to update state based on the result of a form action",
+      path: "/email-form"
     }
   ]
 
