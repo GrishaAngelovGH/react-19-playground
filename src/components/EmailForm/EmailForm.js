@@ -3,6 +3,7 @@
 import { useState, useActionState } from "react"
 
 import styles from "./EmailForm.module.css"
+import commonStyles from "components/common.module.css"
 
 const update = async email => new Promise((resolve, reject) => {
 	setTimeout(() => {
@@ -30,7 +31,7 @@ const EmailForm = () => {
 	)
 
 	return (
-		<div className={styles.emailForm}>
+		<div className={commonStyles.container}>
 			<h1>Change Email</h1>
 
 			<button className={`${styles.button} ${styles.correct}`} onClick={() => { setValue("correct@some.com"); actionState.message = "" }}>Set correct email</button>
@@ -42,14 +43,14 @@ const EmailForm = () => {
 						id="userEmail"
 						type="email"
 						value={value}
-						className={styles.formControl}
+						className={commonStyles.formControl}
 						onChange={({ target }) => { setValue(target.value) }}
 						placeholder="Email"
 						name="email"
 						required
 					/>
 				</label>
-				<button type="submit" className={styles.submitButton}>Submit</button>
+				<button type="submit" className={commonStyles.submitButton}>Submit</button>
 			</form>
 
 			{isPending && <h1 className={styles.label}>Processing...</h1>}

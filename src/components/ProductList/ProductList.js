@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-import styles from "./ProductList.module.css"
+import commonStyles from "components/common.module.css"
 
 const ProductList = () => {
 	const [productName, setProductName] = useState("")
@@ -23,7 +23,7 @@ const ProductList = () => {
 	}
 
 	return (
-		<div className={styles.productList}>
+		<div className={commonStyles.container}>
 			<h1>Product List</h1>
 
 			<form action={formAction}>
@@ -31,7 +31,7 @@ const ProductList = () => {
 					<input
 						id="productName"
 						type="text"
-						className={styles.formControl}
+						className={commonStyles.formControl}
 						placeholder="Product Name"
 						name="productName"
 						value={productName}
@@ -39,13 +39,13 @@ const ProductList = () => {
 						required
 					/>
 				</label>
-				<button type="submit" className={styles.submitButton}>Submit</button>
+				<button type="submit" className={commonStyles.submitButton}>Submit</button>
 			</form>
 
-			<ul className={styles.list}>
+			<ul className={commonStyles.list}>
 				{
 					products.map(v => (
-						<li className={styles.listItem} key={v.id}>{v.name}</li>
+						<li className={commonStyles.listItem} key={v.id}>{v.name}</li>
 					))
 				}
 			</ul>

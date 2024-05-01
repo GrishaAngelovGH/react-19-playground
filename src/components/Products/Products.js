@@ -1,4 +1,4 @@
-import style from "./Products.module.css"
+import commonStyle from "components/common.module.css"
 
 import { use } from "react"
 
@@ -6,11 +6,11 @@ const Products = ({ productsPromise }) => {
   const products = use(productsPromise)
 
   return (
-    <div className={style.products}>
-      <ul className={style.list}>
+    <div className={commonStyle.container}>
+      <ul className={commonStyle.list}>
         {
           products.map(v => (
-            <li key={v.id} className={style.listItem}>{v.name}</li>
+            <li key={v.id} className={commonStyle.listItem}>{v.name}</li>
           ))
         }
       </ul>
